@@ -1,0 +1,26 @@
+#include<stdio.h>
+int input(int* a,int* b)
+{
+ printf("enter the first number\n");
+ scanf("%d",*&a);
+ printf("enter the second number\n");
+ scanf("%d",*&b);
+ return 0;
+ }
+int compute(int a,int b)
+{
+ int c;
+ c=a+b;
+ return c;
+}
+void output(int a,int b,int  c)
+{
+printf("the sum of %d and %d is %d\n",a,b,c);
+}
+int main()
+{
+ int x,y,z;
+ input(&x,&y);
+ z=compute(x,y);
+ output(x,y,z);
+}
