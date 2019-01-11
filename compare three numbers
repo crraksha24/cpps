@@ -10,30 +10,16 @@ int input(int* a,int* b,int* c)
 }
 int compare(int x,int y,int z)
 {
- if (x<y)
+ if (x<y && x<z)
  {
  return x;
- } 
+ }
+ else if (y<x && y<z)
+ {
+ return y;
+ }
  else 
- {
-return y;
- }
-if (x<z)
- {
- return x;
- }
-else 
- {
-return z;
- }
-if (y<z)
- { 
-return y;
- }
-else 
- {
-return z;
- }
+ return z;
 }
 void output(int m)
 {
@@ -45,6 +31,8 @@ int w,x,y,z;
 input(&w,&x,&y);
 z=compare(w,x,y);
 output(z);
+return 0;
 }
 
+ 
  
