@@ -1,0 +1,29 @@
+#include<stdio.h>
+int input(int* a,int* b)
+{
+  printf("enter the first number\n");
+  scanf("%d",*&a);
+  printf("enter the second number\n");
+  scanf("%d",*&b);
+  return 0;
+}
+int compare(int x,int y)
+{
+ if(x>>y)
+{
+ return x;
+}
+ else 
+ return y;
+}
+void output(int m,int n)
+{
+ printf("%d is greater than %d\n",m,n);
+}
+int main()
+{
+ int x,y,z;
+ input(&x,&y);
+ z=compare(x,y);
+ output(x,y);
+}
