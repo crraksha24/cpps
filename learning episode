@@ -1,2 +1,50 @@
 what is the purpose of * in the input?
 ans-it is the pointer used as a reference
+1.how to find logical errors in c progarmming?
+ compare with the existing  program-strategy to learn program
+-mental tracing(understanding of concepts maybe incorrect)
+-add printf statements wherever possible-to find the control flow.
+-print the values of the variables.
+2. Why do we use the if statement?
+   If statement is used to test a condition, if condition is true then the code inside the if statement is
+   executed otherwise that code is not executed.
+3.why should if-else statement be used?
+   If Else is also used to test a condition, if condition is true then the code inside the if statement is
+   executed otherwise else part is executed.
+4.how does gdb work?
+ It helps to run the program until a certain point and helps rectify the errors by stopping the 
+ variables and printing out the values.
+5.what is the purpose of return statement?
+  terminates the execution of a function.
+6.int main()
+{
+ int x,y,z;
+ input(&x,&y);
+ z=compare(x,y);
+ output(x,y,z);
+ return 0;
+}
+error: too many arguments to function ‘output’
+  output(x,y,z);
+ The number of arguments in the main function for the output and the main should be the same.
+ Rectification :
+int main()
+{
+ int x,y,z;
+ input(&x,&y);
+ z=compare(x,y);
+ output(z);
+ return 0;
+}
+7.what is void?
+ It indicates that it does not return any value.
+8.what is && operator?
+ It acts as a boolean expression to return true or false value.
+9.what is the difference between && and &?
+ & is used to perform the logical and mathematical operations.
+ && is used as a boolean operation. 
+10.what is << operator?
+  It is a left shift operator(bitwise operator).
+11.what is < operator?
+ It's used to compare the value of numbers i.e. greater or smaller.
+
