@@ -1,0 +1,59 @@
+#include<stdio.h>
+int input(int* a,int* b,int* c)
+{
+   printf("enter the first number");
+   scanf("%d",*&a);
+   printf("enter the second number");
+   scanf("%d",*&b);
+   printf("enter the third number");
+   scanf("%d",*&c);
+}
+int compare(int x,int y,int z)
+{
+ int min;
+  
+ if(x<y)
+ 
+ min=x;
+ 
+ else 
+ 
+ min=y; 
+ 
+ if(x<z)
+ 
+ min=x;
+ 
+ else
+  
+ min=z;
+ 
+ if(y<x)
+ 
+ min=y;
+ 
+ else 
+ 
+ min=x;
+ 
+ if(y<z)
+ 
+ min=y;
+ 
+ else 
+ 
+ min=z;
+ 
+ return min;
+ }
+void output(int min)
+{
+printf("min=%d",min);
+}
+int main()
+{
+int w,x,y,z;
+input(&w,&x,&y);
+z=compare(w,x,y);
+output(z);
+} 
